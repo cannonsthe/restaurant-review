@@ -1,0 +1,16 @@
+var url = "http://localhost:8080";
+var restaurant_url = url + "/restaurants"
+var restaurant_array = []; // This creates an empty restaurant array
+var restaurantCount = 0;
+var category = "All"; // 2 categories for cuisine and such
+var category1 ="all";
+var currentIndex = 0;
+var delete_url = url + "/deleteuser";
+var review_url = url + "/reviews";
+var review_array = []; // This creates an empty review array
+var user_url = url + "/getallusers"
+var user_array = []; // This creates an empty user array
+var popcornBWImage = 'images/rice_icon_bw.png';
+var popcornImage = 'images/rice_icon.png';
+var rating = 0;
+var urluser = url + "/updateuser"

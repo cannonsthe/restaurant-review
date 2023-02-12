@@ -1,0 +1,64 @@
+<!-- this is a structure of Bootstrap Modal -->
+<div class="modal fade" id="restaurantModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center" style="background-color: #ECA99A;">
+        <h3 class="modal-title text-light w-100" id="restaurants">Restaurant Name</h3>
+        <button type="button" class="close" data-dismiss="modal">
+          <i class="fas fa-times-circle"></i>
+        </button>
+      </div>
+      <div class="modal-body " style="background-color: #ECA99A;">
+        <div class="row text-center">
+          <div class="col-xs-3">
+            <img class="img-fluid stretch-image w-100" style="width: 100%;" id="restaurantPic">
+          </div>
+          <div class="col-xs-7">
+            <table class="table table-hover table-responsive table-sm">
+              <tr>
+                <h4><span class="badge badge-light font-weight-normal float-center">&nbsp; About &nbsp;</span></h4>
+                <p id="about" class="float-left" style="color: whitesmoke;"></p>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="modal-body text-center" style="background-color: #ECA99A;">
+          <h4><span class="badge badge-light font-weight-normal text-center">&nbsp; Map &nbsp;</span></h4>
+          <div id="map" style="width: 735px;height: 500px;"></div>
+        </div>
+        <div class="col-xs-12 px-3"><span class="badge badge-dark font-weight-normal float-left">Location: </span>
+          &nbsp;
+          <p id="location">&nbsp;</p>
+        </div>
+        <div class="col-xs-12 px-3"><span class="badge badge-dark font-weight-normal float-left">Opening and closing
+            time:</span>
+          &nbsp
+          <p id="openingTime"></p>
+        </div>
+        <div class="col-xs-12 px-3"><span class="badge badge-dark font-weight-normal float-left">Contact Info: </span>
+          &nbsp
+          <p id="contact" style="font-size: medium;"></p>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+      <!-- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -->
+      <div id="reviewModal">
+        <div class="modal-header justify-content-center" style="background-color: #ECA99A;">
+          <h5 class="modal-title text-dark justify-content-center" id="review" style="background-color: #ECA99A;">Review
+          </h5>
+        </div>
+        <div class="modal-body " style="background-color: #ECA99A;">
+          <div id="emptyComment" style="background-color: #ECA99A;" class="justify-content-center">No review yet. Create
+            one now</div>
+          <div class="row px-5" id="commentBody" style="background-color: #ECA99A;"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary bg-dark" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary bg-dark" id="newComment" data-toggle="modal"
+              data-target="#newCommentModal" data-dismiss="modal" onClick="newComment()">New Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
